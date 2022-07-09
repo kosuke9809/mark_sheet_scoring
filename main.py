@@ -90,7 +90,9 @@ for i in range(rows_N):
             answer.append(correct_bool[begin:end])
             begin = n+1
     if len(answer) != q_num[-1]:
-        answer.append(q_scores[begin:])
+        answer.append(correct_bool[begin:])
+
+    print(answer)
 
     # 問題別正解カウント
     for q in range(len(answer)):
